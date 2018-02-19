@@ -42,6 +42,7 @@ public class Login extends javax.swing.JFrame {
 
         jLabel4.setText("Contraseña");
 
+        jButton1.setIcon(new javax.swing.ImageIcon("C:\\Users\\Damián Javier Mejía\\Desktop\\Nueva Carpeta (2)\\tienda\\JavaApplication5\\src\\Clases\\login.png")); // NOI18N
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,9 +79,9 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
                     .addComponent(Contraseña, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(44, 44, 44)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addContainerGap(69, Short.MAX_VALUE))
+                .addGap(46, 46, 46))
         );
 
         pack();
