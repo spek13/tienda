@@ -24,7 +24,7 @@ public class MetodoLogin {
         String clave = String.valueOf(Login.Contraseña.getPassword());
         
         int resultado = 0;
-        String SSQL ="SELECT + FROM usuario WHERE usuario='"+usuario+"'AND clave=shal('"+clave+"')";
+        String SSQL ="SELECT * FROM `usuarios` WHERE 1";
        
         Connection con = null; 
         
