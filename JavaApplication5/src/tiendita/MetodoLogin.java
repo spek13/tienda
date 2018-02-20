@@ -24,6 +24,7 @@ public class MetodoLogin {
         String clave = String.valueOf(Login.Contraseña.getPassword());
         
         int resultado = 0;
+        //Este es el error
         String SSQL ="SELECT * FROM `usuarios` WHERE 1";
        
         Connection con = null; 
