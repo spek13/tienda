@@ -101,9 +101,9 @@ public class Login extends javax.swing.JFrame {
             sistema sistema=new sistema();
             sistema.setVisible(true);
             this.dispose();
-            JOptionPane.showMessageDialog(null, "Bienvenido Usuario" + "Has Iniciado Correctamente", "Mensake de bienvenida" ,JOptionPane.INFORMATION_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Bienvenido Usuario, " + "has Iniciado Correctamente", "Mensake de bienvenida" ,JOptionPane.INFORMATION_MESSAGE);
         }else {
-            JOptionPane.showMessageDialog(null, "Error Al conectar" + "Usuario/Contraseña Incorrectos", "" ,JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Error Al conectar, " + " Usuario/Contraseña Incorrectos", "" ,JOptionPane.ERROR_MESSAGE);
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed
