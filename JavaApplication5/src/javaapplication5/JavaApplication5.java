@@ -7,7 +7,7 @@ package javaapplication5;
 
 /**
  *
- * @author Damián Javier Mejía
+ * @author Damián Javier Mejía y Arturo Nieva
  */
 public class JavaApplication5 {
 

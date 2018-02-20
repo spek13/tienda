@@ -9,9 +9,10 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Damián Javier Mejía
+ * @author Damián Javier Mejía y Arturo Nieva
  */
 public class Login extends javax.swing.JFrame {
+    
 
     /**
      * Creates new form Login
@@ -43,6 +44,12 @@ public class Login extends javax.swing.JFrame {
         jLabel3.setText("Usuario");
 
         jLabel4.setText("Contraseña");
+
+        Contraseña.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ContraseñaActionPerformed(evt);
+            }
+        });
 
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -86,24 +93,24 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    MetodoLogin metodologin = new MetodoLogin();
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        
-        if(this.Usuariotxtfield.getText().equals("")||new String(this.Contraseña.getPassword()).equals("")){
-            JOptionPane.showMessageDialog(null, "Usuario o Contraseña Equivocada. Intente nuevamente","Contraseña Invalida",JOptionPane.ERROR_MESSAGE);
+  
+        if(metodologin.Validar_Ingreso()==1){
+            sistema sistema=new sistema();
+            sistema.setVisible(true);
+            this.dispose();
+            JOptionPane.showMessageDialog(null, "Bienvenido Usuario" + "Has Iniciado Correctamente", "Mensake de bienvenida" ,JOptionPane.INFORMATION_MESSAGE);
         }else {
-            
-        sistema sistema=new sistema();
-        sistema.setVisible(true);
-        dispose();
-    
-            
-            
-            
+            JOptionPane.showMessageDialog(null, "Error Al conectar" + "Usuario/Contraseña Incorrectos", "" ,JOptionPane.ERROR_MESSAGE);
         }
         
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void ContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContraseñaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ContraseñaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,9 +148,9 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JPasswordField Contraseña;
-    private javax.swing.JTextField Usuariotxtfield;
-    private javax.swing.JButton jButton1;
+    public static javax.swing.JPasswordField Contraseña;
+    public static javax.swing.JTextField Usuariotxtfield;
+    public static javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
